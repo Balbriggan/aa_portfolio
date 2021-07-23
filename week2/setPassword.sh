@@ -20,17 +20,13 @@ echo "A directory called $folderName has now been created"
 
 read -sp 'Please enter the password you wish to use : ' pass_var
 
+# Purpose: Create a file that contains the hash of the password in the new folder
+
+echo $pass_var | sha256sum > $folderName/secret.txt
+
 # Purpose: echo to skip a line & improve visual look
 
 echo 
-
-# Purpose: cd to the newly created folder
-
-cd $folderName
-
-# Purpose: Create a file that contains the password in the new folder
-
-printf "Here is your password \n$pass_var" > secret.txt
 
 # Purpose: Display the use of exit. A successful exxcution returns 0.
 
