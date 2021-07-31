@@ -22,7 +22,7 @@ read -sp 'Please enter the password you wish to use : ' pass_var
 
 # Purpose: Create a file that contains the hash of the password in the new folder
 
-echo $pass_var | sha256sum > $folderName/secret.txt
+echo $pass_var | sha256sum > $folderName/secret2.txt
 
 # Purpose: echo to skip a line & improve visual look
 
