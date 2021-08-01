@@ -1,18 +1,14 @@
 #!/bin/bash
 
-# calculator.sh - A basic script that includes an if and case statements.  
+# calculator.sh - A basic script that performs calculations and changes the colour of text based on use input.
 # Author: Andrew Abel
-# Date: 31/July/2021
+# Date: 1/August/2021
 
 # Script Purpose: Call a different script, evaluate its exit value and either terminate with a message or present further options to call subsequent scripts.
 
-
-
-
-
 echo "Welcome to the basic Calculator application"
 
-# Purpose: Case Statement based on the return code = 0. This presents 3 options and calls a new script to carry out the use choice.
+# Purpose: Case Statement based on user input. The case statement performs the colour set and the calculations with.
 PS3='Please enter your choice: '
 options=("Addition" "Subtraction" "Multiplication" "Division" "Quit")
 select opt in "${options[@]}"
