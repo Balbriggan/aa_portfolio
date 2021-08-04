@@ -72,6 +72,7 @@ do
             txtrst=$(tput sgr0) 
             echo "${txtrst}Thanks you for playing, the program wil now exit"
             echo ""
+            break
             ;;
         "Quit")
             break
