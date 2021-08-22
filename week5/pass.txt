@@ -1,0 +1,4 @@
+root:x:0:0:root:/root:/bin/bash
+student:x:1000:1001:Ubuntu:/home/student:/bin/bash
+omsagent:x:996:998:OMS agent:/var/opt/microsoft/omsagent/run:/bin/bash
+nxautomation:x:995:995:nxOMSAutomation:/home/nxautomation/run:/bin/bash

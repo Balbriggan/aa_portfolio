@@ -17,7 +17,10 @@ if [ "$ret_code" == "1" ] ; then
     exit 0
 fi
 
-# Purpose: Case Statement based on the return code = 0. This presents 8 options and calls a new script to carry out the use choice. The script loops until exit option 8 is chosen.
+# Purpose: Case Statement based on the return code = 0. This presents 8 options and calls a new script to carry out the use choice. 
+# The script loops until exit option 8 is chosen.
+# Alternating colours alre also used for clarity betwen choices.
+
 txtblu=$(tput setaf 4)
 PS3="${txtblu} Please enter your choice to continue using the program : "
 options=("Create a Folder" "Copy a Folder" "Set a Password" "Use Calculator" "Create Week Folders" "Check Filename" "Download a File" "Exit")

@@ -13,7 +13,7 @@ read -sp 'Please enter the password you wish to use : ' user_submitted_password
 # Purpose: Hash the value in the variable.
 user_submitted_hash=$(echo $user_submitted_password | sha256sum)
 
-# Purpose: Read hash from file.
+# Purpose: Read hash from file. PW = 12345
 file_input="secret2.txt"
 
 # Purpose: While Loop - Read each line of the file and save data to a variable.
